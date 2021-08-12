@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="731.0" prefWidth="954.0" style="-fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.8),30,0,0,0);" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.formReg">
+   <children>
+      <Pane layoutX="1.0" layoutY="-3.0" prefHeight="116.0" prefWidth="954.0" style="-fx-background-color: #ffbb00; -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.8),30,0,0,0);">
+         <children>
+            <Label contentDisplay="CENTER" layoutX="218.0" layoutY="14.0" prefHeight="78.0" prefWidth="518.0" style="-fx-cursor: pointer; -fx-alignment: center;" text="STREAM REGISTRATION SECTION">
+               <font>
+                  <Font name="Times New Roman Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="61.0" layoutY="172.0" prefHeight="481.0" prefWidth="822.0" style="-fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.8),30,0,0,0); -fx-padding: 20; -fx-background-color: #FFF; -fx-border-radius: 40; -fx-background-radius: 40;">
+         <children>
+            <JFXTextField fx:id="stream1" labelFloat="true" layoutX="30.0" layoutY="169.0" promptText="STREAM 1" />
+            <JFXTextField fx:id="stream2" labelFloat="true" layoutX="259.0" layoutY="169.0" promptText="STREAM 2" />
+            <JFXTextField fx:id="stream3" labelFloat="true" layoutX="470.0" layoutY="169.0" promptText="STREAM 3" />
+            <JFXTextField fx:id="stream4" labelFloat="true" layoutX="30.0" layoutY="234.0" promptText="STREAM 4" />
+            <JFXTextField fx:id="stream5" labelFloat="true" layoutX="259.0" layoutY="234.0" promptText="STREAM 5" />
+            <JFXTextField fx:id="stream6" labelFloat="true" layoutX="470.0" layoutY="234.0" promptText="STREAM 6" />
+            <JFXComboBox fx:id="form" labelFloat="true" layoutX="26.0" layoutY="93.0" onAction="#updateFormsOnAction" prefHeight="25.0" prefWidth="128.0" promptText="FORM " />
+            <JFXTextField fx:id="streamNo" labelFloat="true" layoutX="243.0" layoutY="93.0" onAction="#addTextField" prefHeight="25.0" prefWidth="190.0" promptText="ENTER NUMBER OF SREAMS" />
+            <JFXButton contentDisplay="CENTER" layoutX="193.0" layoutY="315.0" onAction="#addStream" prefHeight="25.0" prefWidth="101.0" style="-fx-background-color: #000; -fx-text-fill: #ffbb00; -fx-border-radius: 40; -fx-background-radius: 40;" text="ADD">
+               <font>
+                  <Font name="Times New Roman Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton contentDisplay="CENTER" layoutX="433.0" layoutY="315.0" onAction="#updateStream" prefHeight="25.0" prefWidth="101.0" style="-fx-background-color: #000; -fx-text-fill: #ffbb00; -fx-border-radius: 40; -fx-background-radius: 40;" text="UPDATE">
+               <font>
+                  <Font name="Times New Roman Bold" size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

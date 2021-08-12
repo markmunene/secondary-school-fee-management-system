@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderpane" prefHeight="755.0" prefWidth="948.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Fee">
+   <left>
+      <Pane prefHeight="737.0" prefWidth="200.0" style="-fx-background-color: #0d293e;" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton fx:id="backBtn" layoutX="21.0" layoutY="632.0" onAction="#close" prefHeight="43.0" prefWidth="160.0" style="-fx-border-radius: 40; -fx-background-radius: 40; -fx-background-color: black;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="25.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="15.0" layoutY="149.0" onAction="#payFee" prefHeight="43.0" prefWidth="160.0" style="-fx-border-radius: 40; -fx-background-radius: 40; -fx-background-color: black;" text="PayFees" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="21.0" layoutY="226.0" onAction="#feeBalance" prefHeight="43.0" prefWidth="153.0" style="-fx-border-radius: 40; -fx-background-radius: 40; -fx-background-color: black;" text="FeeBalance" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="15.0" layoutY="305.0" onAction="#feeStructure" prefHeight="43.0" prefWidth="160.0" style="-fx-border-radius: 40; -fx-background-radius: 40; -fx-background-color: black;" text="FeeStructure" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="18.0" layoutY="378.0" onAction="#updateFeeOnAction" prefHeight="43.0" prefWidth="160.0" style="-fx-border-radius: 40; -fx-background-radius: 40; -fx-background-color: black;" text="UpdateFee" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="16.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </left>
+</BorderPane>

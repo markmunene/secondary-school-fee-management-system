@@ -1,0 +1,22 @@
+.root{
+    -fx-background-color:#02020A;
+    -fx-font-size:15px;
+}
+.button{
+    -fx-background-color:orange;
+    -fx-background-radius:40;
+    -fx-border-radius:40;
+}
+.grid-Pane{
+    -fx-background-color:#04081A;
+}
+.text-area{
+    -fx-text-fill:white;
+}
+.label{
+    -fx-text-fill:white;
+    -fx-font-size:17px;
+}
+.text-field{
+    -fx-text-fill:black;
+}

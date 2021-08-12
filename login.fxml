@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane style="-fx-background-color: #0d293e;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Login">
+   <center>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="586.0" prefWidth="836.0">
+         <children>
+            <Pane prefHeight="107.0" prefWidth="836.0" style="-fx-background-color: #2b2b2b;">
+               <children>
+                  <Label alignment="CENTER" layoutX="336.0" layoutY="7.0" prefHeight="28.0" prefWidth="165.0" style="-fx-background-color: #2b2b2b;" text="Welcome" textFill="#f5f5f5">
+                     <font>
+                        <Font name="System Bold" size="27.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <AnchorPane prefHeight="597.0" prefWidth="836.0" style="-fx-background-color: #0d293e;" styleClass="pane" stylesheets="@login.css">
+               <children>
+                  <TextField fx:id="userName" alignment="CENTER" layoutX="208.0" layoutY="105.0" prefHeight="33.0" prefWidth="440.0" promptText="Enter Username" style="-fx-background-radius: 40; -fx-border-radius: 40; -fx-background-color: null; -fx-border-radius: 40; -fx-border-color: white; -fx-text-fill: white;">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField fx:id="password" alignment="CENTER" layoutX="208.0" layoutY="216.0" prefHeight="33.0" prefWidth="440.0" promptText="Enter Password" style="-fx-text-fill: black; -fx-background-radius: 40; -fx-background-color: null; -fx-border-color: white; -fx-border-radius: 40; -fx-text-fill: white;">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </PasswordField>
+                  <JFXButton fx:id="loginbtn" layoutX="353.0" layoutY="307.0" onAction="#login" prefHeight="38.0" prefWidth="151.0" style="-fx-background-color: #02020A; -fx-border-radius: 40; -fx-background-radius: 40; -fx-text-fill: white;" text="Login">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXCheckBox fx:id="passBox" layoutX="659.0" layoutY="224.0" onAction="#passcheckBox" text="Show Password" textFill="#fcfcfc">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXCheckBox>
+                  <ImageView layoutX="386.0" layoutY="33.0">
+                     <image>
+                        <Image url="@../sample/padlock-7-64.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView layoutX="397.0" layoutY="157.0" rotate="31.0">
+                     <image>
+                        <Image url="@../sample/key-64.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

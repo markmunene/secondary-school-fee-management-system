@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Home">
+   <center>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="804.0" prefWidth="985.0">
+         <children>
+            <Pane layoutY="52.0" onDragDetected="#logoutBtn" prefHeight="312.0" prefWidth="985.0">
+               <children>
+                  <Pane layoutX="5.0" layoutY="-29.0" prefHeight="86.0" prefWidth="976.0" style="-fx-background-color: #ffbb00; -fx-padding: 10; -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.8),30,0,0,0);">
+                     <children>
+                        <Label contentDisplay="CENTER" layoutX="223.0" layoutY="15.0" prefHeight="49.0" prefWidth="518.0" style="-fx-cursor: pointer; -fx-alignment: center;" text="CHLOPHURIC SECONDARY SCHOOL">
+                           <font>
+                              <Font name="Times New Roman Bold" size="25.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <ImageView fx:id="img2" fitHeight="217.0" fitWidth="217.0" layoutX="363.0" layoutY="68.0">
+                     <image>
+                        <Image url="@../sample/logo2.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="6.0" layoutY="344.0" prefHeight="400.0" prefWidth="976.0">
+               <children>
+                  <BarChart fx:id="feeChart" layoutY="61.0" prefHeight="375.0" prefWidth="933.0" style="-fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.8),30,0,0,0); -fx-padding: 20;">
+                    <xAxis>
+                      <CategoryAxis label="FORM" side="BOTTOM">
+                           <tickLabelFont>
+                              <Font name="Times New Roman Bold" size="18.0" />
+                           </tickLabelFont></CategoryAxis>
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis label="FEES PAID" side="LEFT">
+                           <tickLabelFont>
+                              <Font name="Times New Roman Bold" size="17.0" />
+                           </tickLabelFont></NumberAxis>
+                    </yAxis>
+                  </BarChart>
+                  <Label alignment="CENTER" layoutX="229.0" layoutY="23.0" prefHeight="32.0" prefWidth="459.0" text="FEE PAYMENT STATISTICS  ">
+                     <font>
+                        <Font name="Times New Roman Bold" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </center>
+   <left>
+      <Pane prefHeight="804.0" prefWidth="260.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton layoutX="20.0" layoutY="567.0" onAction="#logoutOnAction" prefHeight="43.0" prefWidth="160.0" style="-fx-border-radius: 40; -fx-background-radius: 40; -fx-background-color: black;" text="LogOut" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="20.0" layoutY="252.0" onAction="#navToReg" prefHeight="43.0" prefWidth="160.0" style="-fx-border-radius: 40; -fx-background-radius: 40; -fx-background-color: black;" text="Registrations" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="20.0" layoutY="359.0" onAction="#navToStude" prefHeight="43.0" prefWidth="160.0" style="-fx-border-radius: 40; -fx-background-radius: 40; -fx-background-color: black;" text="FeeOperations" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="20.0" layoutY="454.0" onAction="#navtopromote" prefHeight="43.0" prefWidth="160.0" style="-fx-border-radius: 40; -fx-background-radius: 40; -fx-background-color: black;" text="promoteStudents" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXTextArea layoutX="7.0" layoutY="14.0" prefHeight="185.0" prefWidth="216.0" text="tyson group  Finance system">
+               <font>
+                  <Font name="Times New Roman Bold" size="34.0" />
+               </font>
+            </JFXTextArea>
+            <Label layoutX="223.0" layoutY="34.0" prefHeight="166.0" prefWidth="10.0" style="-fx-background-color: #ffbb00;" />
+            <Label layoutX="224.0" layoutY="242.0" prefHeight="64.0" prefWidth="8.0" style="-fx-background-color: #ffbb00;" />
+            <Label layoutX="224.0" layoutY="338.0" prefHeight="64.0" prefWidth="8.0" style="-fx-background-color: #ffbb00;" />
+            <Label layoutX="224.0" layoutY="444.0" prefHeight="64.0" prefWidth="8.0" style="-fx-background-color: #ffbb00;" />
+            <Label layoutX="224.0" layoutY="546.0" prefHeight="64.0" prefWidth="8.0" style="-fx-background-color: #ffbb00;" />
+         </children>
+      </Pane>
+   </left>
+</BorderPane>

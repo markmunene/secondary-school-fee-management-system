@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="661.0" prefWidth="991.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.StudentPromotion">
+   <top>
+      <Pane prefHeight="91.0" prefWidth="600.0" style="-fx-background-color: #FFBB00;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="106.0" layoutY="26.0" prefHeight="40.0" prefWidth="622.0" text="STUDENT PROMOTION">
+               <font>
+                  <Font name="Times New Roman Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </top>
+   <left>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <JFXComboBox fx:id="form" labelFloat="true" layoutX="7.0" layoutY="68.0" prefHeight="38.0" prefWidth="169.0" promptText="FORM" />
+            <JFXComboBox fx:id="stream" labelFloat="true" layoutX="4.0" layoutY="168.0" onAction="#loadstudentForPromotion" prefHeight="25.0" prefWidth="166.0" promptText="STREAM" />
+            <JFXButton layoutX="25.0" layoutY="267.0" onAction="#promoteStudent" prefHeight="43.0" prefWidth="131.0" style="-fx-border-radius: 40; -fx-background-radius: 40; -fx-background-color: BLACK; -fx-text-fill: #FFBB00; fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.8),30,0,0,0);" text="SUBMIT">
+               <font>
+                  <Font name="Times New Roman Bold" size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="backMen" layoutX="35.0" layoutY="506.0" onAction="#backAction" prefHeight="43.0" prefWidth="131.0" style="-fx-border-radius: 40; -fx-background-radius: 40; -fx-background-color: BLACK; -fx-text-fill: #FFBB00; fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.8),30,0,0,0);" text="BACK">
+               <font>
+                  <Font name="Times New Roman Bold" size="19.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </left>
+   <center>
+      <TableView fx:id="promoteView" prefHeight="570.0" prefWidth="674.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="admissionNoCol" prefWidth="126.0" text="ADMISSION NO" />
+          <TableColumn fx:id="fNameCol" prefWidth="214.0" text="FIRST NAME" />
+            <TableColumn fx:id="surnameCol" prefWidth="126.0" text="SURNAME" />
+            <TableColumn fx:id="formLevelCol" prefWidth="146.0" text="FORM" />
+            <TableColumn fx:id="promoteCol1" prefWidth="146.0" text="PROMOTE" />
+        </columns>
+      </TableView>
+   </center>
+</BorderPane>

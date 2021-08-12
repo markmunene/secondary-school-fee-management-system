@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="676.0" prefWidth="778.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.studentReg">
+   <children>
+      <Pane layoutX="44.0" layoutY="151.0" prefHeight="508.0" prefWidth="688.0" style="-fx-background-color: #fff; -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.8),30,0,0,0); -fx-padding: 20; -fx-border-radius: 40; -fx-background-radius: 40;">
+         <children>
+            <JFXTextField fx:id="fname" labelFloat="true" layoutX="144.0" layoutY="132.0" prefHeight="25.0" prefWidth="147.0" promptText="FIRST NAME">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="surname" labelFloat="true" layoutX="145.0" layoutY="189.0" prefHeight="25.0" prefWidth="147.0" promptText="SURNAME" />
+            <JFXTextField fx:id="addmissionNumber" labelFloat="true" layoutX="144.0" layoutY="59.0" prefHeight="32.0" prefWidth="147.0" promptText="ADMISSION NUMBER">
+               <font>
+                  <Font name="Times New Roman Bold" size="12.0" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="contact" labelFloat="true" layoutX="139.0" layoutY="247.0" prefHeight="25.0" prefWidth="159.0" promptText="PARENT CONTACT" />
+            <JFXComboBox fx:id="formLevel" labelFloat="true" layoutX="405.0" layoutY="189.0" prefHeight="25.0" prefWidth="166.0" promptText="FORM LEVEL" />
+            <JFXButton contentDisplay="CENTER" layoutX="167.0" layoutY="331.0" onAction="#addStudent" prefHeight="25.0" prefWidth="101.0" style="-fx-background-color: #000; -fx-text-fill: #ffbb00; -fx-border-radius: 40; -fx-background-radius: 40;" text="ADD">
+               <font>
+                  <Font name="Times New Roman Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton contentDisplay="CENTER" layoutX="294.0" layoutY="367.0" onAction="#deleteStudent" prefHeight="25.0" prefWidth="101.0" style="-fx-background-color: #000; -fx-text-fill: #ffbb00; -fx-border-radius: 40; -fx-background-radius: 40;" text="DELETE">
+               <font>
+                  <Font name="Times New Roman Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton contentDisplay="CENTER" layoutX="421.0" layoutY="331.0" onAction="#updateStudent" prefHeight="25.0" prefWidth="101.0" style="-fx-background-color: #000; -fx-text-fill: #ffbb00; -fx-border-radius: 40; -fx-background-radius: 40;" text="UPDATE">
+               <font>
+                  <Font name="Times New Roman Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXComboBox fx:id="stream" labelFloat="true" layoutX="405.0" layoutY="247.0" prefHeight="25.0" prefWidth="166.0" promptText="CLASS STREAM" />
+            <JFXComboBox fx:id="accomodation" labelFloat="true" layoutX="405.0" layoutY="120.0" prefHeight="25.0" prefWidth="166.0" promptText="ACCOMODATION" />
+            <JFXComboBox fx:id="gender" labelFloat="true" layoutX="405.0" layoutY="62.0" prefHeight="25.0" prefWidth="166.0" promptText="GENDER" />
+         </children>
+      </Pane>
+      <Pane layoutX="1.0" prefHeight="114.0" prefWidth="778.0" style="-fx-background-color: #ffbb00; -fx-padding: 20; -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.8),30,0,0,0);">
+         <children>
+            <Label contentDisplay="CENTER" layoutX="73.0" layoutY="14.0" prefHeight="98.0" prefWidth="518.0" style="-fx-cursor: pointer; -fx-alignment: center;" text="STUDENT REGISTRATION SECTION">
+               <font>
+                  <Font name="Times New Roman Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
